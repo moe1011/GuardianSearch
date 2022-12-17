@@ -41,6 +41,16 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+
+/**
+ * Main Activity of application
+ *
+ * @param API_URL Holds API url for the guardian website.
+ * @param elements An array list of a news item object.
+ * @param adapter An adapter.
+ * @param sharedPreferences Used to store information about the application to load on start up.
+ * @param active check if active.
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     final private String API_URL = "https://content.guardianapis.com/search?api-key=851d91c3-0ee4-457c-a1ec-8da8ddd9e8de";
     private ArrayList<NewsItem> elements = new ArrayList<>();
@@ -219,6 +229,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    /**
+     * Used to make calls to the API and retrieve information from a valid search input.
+     *
+     * @param progressBar Progress bar object.
+     */
     public class GuardianAPI extends AsyncTask<String, Integer, ArrayList<NewsItem>> {
         private ProgressBar progressBar = findViewById(R.id.progressBar);
 
@@ -292,6 +307,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+    /**
+     * Used to hold information for each news article retrieved from a search.
+     *
+     * @param id Unique ID given to each news item.
+     * @param sectionName News articles section name.
+     * @param title News articles title.
+     * @param url News articles url.
+     * @param date News articles publish date.
+     */
     private static class NewsItem {
         private String id, sectionName, title, url, date;
 

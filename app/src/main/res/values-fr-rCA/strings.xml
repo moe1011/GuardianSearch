@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Guardian Search</string>
-    <string name="search">Search</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
-    <string name="about">About</string>
-    <string name="favourites">Favourites</string>
-    <string name="home">Home</string>
+    <string name="search">Chercher</string>
+    <string name="open">Ouvrir</string>
+    <string name="close">proche</string>
+    <string name="about">À propos</string>
+    <string name="favourites">Favoris</string>
+    <string name="home">Domicile</string>
 </resources>

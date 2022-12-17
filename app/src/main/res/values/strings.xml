@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Guardian Search</string>
+    <string name="app_name">Guardian Search V1</string>
     <string name="search">Search</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
